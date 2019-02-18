@@ -14,10 +14,42 @@ class App extends Component {
         <br/>
         <BoxColor r={255} g={0} b={0} />
         <BoxColor r={128} g={255} b={0} />
+        <Rating>3</Rating>
+        <Infobox name="Maxence Bouret" img="https://miro.medium.com/max/2400/1*4vIkoT2ii8unib8Ezb-Ukw.jpeg"/>
       </div>
     );
   }
 }
+
+class Infobox extends Component {
+  render() {
+
+    return (
+        <div class="box">
+          <p>Your Driver</p> 
+          <strong>{this.props.name}</strong><br/>
+          <img src={this.props.img} width="100px" alt=""/>
+          <div><Rating>5</Rating></div> 
+        </div>
+      )
+  }
+}
+
+class Rating extends Component {
+  render() {
+    let num = this.props.children;
+    let resDiv = [];
+    for (let i=0; i < num; i++) {
+      resDiv.push (<span><i class="fas fa-star"></i></span>);
+    }
+    for (let i=0; i < (5-num); i++) {
+      resDiv.push (<span><i class="far fa-star"></i></span>);
+    };
+    return <div>{resDiv}</div>
+  }
+}
+
+
 
 class BoxColor extends Component {
   render() {
@@ -61,7 +93,7 @@ class Greetings extends Component {
 
 function componentToHex(c) {
   var hex = c.toString(16);
-  return hex.length == 1 ? "0" + hex : hex;
+  return hex.length === 1 ? "0" + hex : hex;
 }
 
 function rgbToHex(r, g, b) {
