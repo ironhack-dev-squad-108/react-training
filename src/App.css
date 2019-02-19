@@ -2,32 +2,114 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.greetings {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.random {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  width: 400px;
+  display: inline-block;
+}
+
+.boxcolor {
+  height: 20px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.creditCard {
+  height:  200px;
+  width: 300px;
+  margin: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.cardType {
+  margin: 10px;
+  width: 60px;
+  align-self: flex-end;
+}
+
+.cardNumber {
+  font-size: 30px;
+  text-shadow: 0 1px grey;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.expDate, .name {
+  align-self: flex-start;
+  margin: 5px 5px 5px 12px
+}
+
+.rating {
+  padding: 5px;
+  width: 100px;
+  margin: auto;
+}
+.stars {
+  width: 20px;
+}
+
+.driverCard {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: auto;
+}
+.driverInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+}
+.driverPic {
+  height: 100px;
+}
+
+.clickablePicture {
+  height: 200px;
+}
+
+.dice {
+  height: 100px;
+  margin: 10px;
+}
+
+.carousel {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center
 }
 
-.App-link {
-  color: #61dafb;
+.carouselImg {
+  height: 200px;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carouselBtn {
+  height: 50px;
+  font-size: 30px;
+  margin: 5px;
 }
