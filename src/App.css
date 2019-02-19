@@ -113,3 +113,43 @@
   font-size: 30px;
   margin: 5px;
 }
+
+.fbList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fbButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.fbCard {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  width: 350px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.fbImg {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.fbInfo {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.fbInfo > p {
+  text-align: left;
+  margin: 5px;
+}
