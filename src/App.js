@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Dice from './components/Dice'
 import './App.css';
 
 class App extends Component {
@@ -16,8 +17,35 @@ class App extends Component {
         <BoxColor r={128} g={255} b={0} />
         <Rating>3</Rating>
         <Infobox name="Maxence Bouret" img="https://miro.medium.com/max/2400/1*4vIkoT2ii8unib8Ezb-Ukw.jpeg"/>
+        <ClickablePicture img="https://github.com/ironhack-dev-squad-108/react-training/raw/master/solution-code/public/img/persons/maxence.png"
+           imgClicked="https://github.com/ironhack-dev-squad-108/react-training/raw/master/solution-code/public/img/persons/maxence-glasses.png" />
+        <Dice img=""/>
+        
       </div>
     );
+  }
+}
+
+class ClickablePicture extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {currentPic: props.img};
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      currentPic: prevState.currentPic === this.props.img ? this.props.imgClicked : this.props.img
+    }))
+  }
+
+  render() {
+
+    return (
+        <div className="box">
+          <img onClick={this.handleClick} src={this.state.currentPic} width="400px" alt=""/>
+        </div>
+      )
   }
 }
 
@@ -25,7 +53,7 @@ class Infobox extends Component {
   render() {
 
     return (
-        <div class="box">
+        <div className="box">
           <p>Your Driver</p> 
           <strong>{this.props.name}</strong><br/>
           <img src={this.props.img} width="100px" alt=""/>
@@ -40,10 +68,10 @@ class Rating extends Component {
     let num = this.props.children;
     let resDiv = [];
     for (let i=0; i < num; i++) {
-      resDiv.push (<span><i class="fas fa-star"></i></span>);
+      resDiv.push (<span><i className="fas fa-star"></i></span>);
     }
     for (let i=0; i < (5-num); i++) {
-      resDiv.push (<span><i class="far fa-star"></i></span>);
+      resDiv.push (<span><i className="far fa-star"></i></span>);
     };
     return <div>{resDiv}</div>
   }
@@ -70,7 +98,7 @@ class BoxColor extends Component {
 class Random extends Component {
   render() {
     return (
-      <h2>{this.props.min + Math.floor(Math.random()*this.props.max)}</h2>
+      <h2>{this.props.min + Math.floor(Math.random()* this.props.max)}</h2>
     )
   }
 }
