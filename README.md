@@ -399,3 +399,19 @@ Create 2 components:
 
 
 
+
+-----
+
+# Extra
+
+## Airbnb Experience Card
+
+Try to reproduce this component from [this website](https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886)
+
+![Imgur](https://i.imgur.com/1FCcjHD.jpg)
+
+
+## Twitter Profile Card
+
+To to reproduce this card. Source [here](https://twitter.com/steveschoger/status/981606881255976961) 
+![Imgur](https://i.imgur.com/JCsi5Bo.png)
