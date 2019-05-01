@@ -122,6 +122,8 @@ It takes 8 props:
 
 Take your time to do as close to the output. You probably have to use flexbox.
 
+You can use the Master Card and Visa picture from the `/public/img` folder.
+
 **Example**
 ```js
 <CreditCard 
