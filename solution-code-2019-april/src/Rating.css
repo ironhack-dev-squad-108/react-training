@@ -1,0 +1,32 @@
+.Rating {
+  display: inline-block;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.Rating .pop-up {
+  font-size: 14px;
+  line-height: 25px;
+  color: white;
+  text-align: center;
+  height: 25px;
+  width: 50px;
+  background-color: black;
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 50px/2);
+  z-index: 100;
+}
+
+
+.Rating .pop-up::before {
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  transform: rotate(45deg);
+  background-color: black;
+  top: 21px;
+  left: calc(50% - 6px/2);
+  z-index: 1;
+}

@@ -12,7 +12,6 @@ function CreditCard(props) {
     <div className="CreditCard" style={style}>
       <div className="type">
         <img src={props.type === "Visa" ? "/img/visa.png" : "/img/master-card.svg"} alt=""/>
-        
       </div>
       <div className="number">{hiddenNumber}</div>
       <div>
