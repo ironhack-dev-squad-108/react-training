@@ -7,6 +7,7 @@ import BoxColor from './BoxColor'
 import CreditCard from './CreditCard'
 import Rating from './Rating'
 import DriverCard from './DriverCard'
+import Bomb from './Bomb'
 
 class App extends Component {
   render() {
@@ -109,6 +110,12 @@ class App extends Component {
             model: "Audi A3",
             licensePlate: "BE33ER"
           }} />
+
+        
+        <h1>Bomb</h1>
+        {/* Render the Bomb component with props.initialTime=10 */}
+        <Bomb initialTime={10} />
+        <Bomb initialTime={5} />
         <br/>
         <br/>
         <br/>

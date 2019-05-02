@@ -400,20 +400,18 @@ Create 2 components:
 
 
 
+## State | Bomb
+
+Create a `Bomb` component with 
+- `props.initialTime`: A number representing the initial time of the bomb, in seconds
+- `state.time`: A number representing the current time
 
 
------
+**Example**
+```js
+<Bomb initialTime={5} />
+```
 
-# Extra
+**Output**
 
-## Airbnb Experience Card
-
-Try to reproduce this component from [this website](https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886)
-
-![Imgur](https://i.imgur.com/1FCcjHD.jpg)
-
-
-## Twitter Profile Card
-
-To to reproduce this card. Source [here](https://twitter.com/steveschoger/status/981606881255976961) 
-![Imgur](https://i.imgur.com/JCsi5Bo.png)
+![GIF](https://media.giphy.com/media/fvrWXglwgFYarEWwCX/giphy.gif)

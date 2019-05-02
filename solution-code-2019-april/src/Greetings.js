@@ -2,7 +2,7 @@ import React from 'react';
 import './Greetings.css'
 
 function Greetings(props) {
-  console.log(props);
+  // console.log(props);
   let greetings = 'Hello'
   if (props.lang === 'fr') greetings = "Bonjour"
   if (props.lang === 'es') greetings = "Hola"
