@@ -1,0 +1,11 @@
+.idCardContainer {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin: 10px;
+    line-height: 5px;
+}
+
+.idCardContainer img {
+    margin: 5px;
+}
