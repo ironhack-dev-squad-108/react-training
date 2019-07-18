@@ -30,3 +30,53 @@ code {
   margin: 5px;
   padding: 5px;
 }
+
+
+.Random {
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+.BoxColor {
+  border: 2px solid black;
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.CreditCard {
+  border-radius: 10px;
+  margin: 5px;
+  padding: 15px;
+  width: 250px;
+}
+
+.CreditCard__type {
+  height: 15px;
+  margin-left: auto;
+  display: block;
+}
+
+.CreditCard__number {
+  font-size: 25px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.CreditCard__3rd-line {
+  font-size: 12px;
+}
+.CreditCard__expiration {
+  margin-right: 10px;
+}
+.CreditCard__owner {
+  font-size: 12px;
+}
+
+.row-container {
+  display: flex;
+  flex-wrap: wrap;
+}
